@@ -1,0 +1,6 @@
+.vscode
+*.o
+*.a
+.compile_commands.json
+.cache
+z_thpool_test
