@@ -32,6 +32,7 @@ all: $(LIB) $(TEST_LIB) $(TEST_PROGRAM)
 
 # Rule to create the library
 $(LIB): $(OBJ)
+	@mkdir -p $(BUILD)
 	@mkdir -p $(LIBDIR)
 	$(AR) rcs $@ $^
 
