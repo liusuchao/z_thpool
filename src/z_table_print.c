@@ -11,7 +11,7 @@ struct z_table_print_struct {
 extern void __z_table_print_default(const char *format, ...);
 
 // Global instance with default settings for table printing
-struct z_table_print_struct gs_t_ools_table_print = {160, {0}, __z_table_print_default};
+struct z_table_print_struct gs_table_print = {80, {0}, __z_table_print_default};
 
 // Default implementation of the print function
 void __z_table_print_default(const char *format, ...) {
@@ -44,19 +44,19 @@ static void __z_table_print_title(struct z_table_print_struct *printer, const ch
 
 // Public function to print a table border
 void z_table_print_border(void) {
-    __z_table_print_border(&gs_t_ools_table_print);
+    __z_table_print_border(&gs_table_print);
     return;
 }
 
 // Public function to print a table title
 void z_table_print_title(const char *title) {
-    __z_table_print_title(&gs_t_ools_table_print, title);
+    __z_table_print_title(&gs_table_print, title);
     return;
 }
 
 // Public function to print a formatted row within the table
 void z_table_print_row(const char *format, ...) {
-    struct z_table_print_struct *printer = &gs_t_ools_table_print;
+    struct z_table_print_struct *printer = &gs_table_print;
     if (printer->print != NULL) { // Check if a print function is set
         va_list args;
         va_start(args, format);
@@ -69,11 +69,11 @@ void z_table_print_row(const char *format, ...) {
 
 // Public function to set the table's width, ensuring it does not exceed buffer size
 void z_table_print_set_width(int width) {
-    gs_t_ools_table_print.width = width;
+    gs_table_print.width = width;
 
     // Ensure the width does not exceed the buffer's capacity
-    if (width >= sizeof(gs_t_ools_table_print.buffer)) {
-        gs_t_ools_table_print.width = sizeof(gs_t_ools_table_print.buffer) - 1;
+    if (width >= sizeof(gs_table_print.buffer)) {
+        gs_table_print.width = sizeof(gs_table_print.buffer) - 1;
     }
     return;
 }
@@ -81,7 +81,7 @@ void z_table_print_set_width(int width) {
 // Public function to set a custom print function
 void z_table_print_set_func(void (*print)(const char *format, ...)) {
     if (print) { // Verify the function pointer is valid
-        gs_t_ools_table_print.print = print;
+        gs_table_print.print = print;
     }
     return;
 }
