@@ -139,12 +139,13 @@ z_table_print.c #用于测试程序的show命令,为了打印方便的打印表�
 
 ## ❓ 常见问题
 
-## 🤝开发指南 
+## 🤝 开发指南 
 
-## 🚀 Star 
-
+## 🚀 星路历程 
+[![Stargazers over time](https://starchart.cc/BitStreamlet/z_thpool.svg?variant=adaptive)](https://starchart.cc/BitStreamlet/z_thpool)
 ## 🌟 贡献
 感谢所有已经对 z_thpool 做出贡献的人！🎉
+<a href="https://github.com//cuixueshe/earthworm/graphs/contributors"><img src="https://contributors.nn.ci/api?repo=BitStreamlet/z_thpool" /></a>
 ## 🌟 致谢
 **感谢您花时间阅读我们的项目文档。**
 **如果您觉得这个项目对您有帮助，请帮忙Star支持我们，谢谢！**

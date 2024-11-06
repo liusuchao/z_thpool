@@ -138,12 +138,15 @@ z_table_print.c # Used by the test program's show command for convenient table p
 
 ## ❓ FAQ
 
-## 🤝Development Guide 
+## 🤝 Development Guide 
 
 ## 🚀 Star 
+[![Stargazers over time](https://starchart.cc/BitStreamlet/z_thpool.svg?variant=adaptive)](https://starchart.cc/BitStreamlet/z_thpool)
 
 ## 🌟 Contribution
 Thanks to everyone who has contributed to z_thpool! 🎉
+<a href="https://github.com//cuixueshe/earthworm/graphs/contributors"><img src="https://contributors.nn.ci/api?repo=BitStreamlet/z_thpool" /></a>
+
 ## 🌟 Acknowledgment
 **Thank you for taking the time to read our project documentation.**
 **If you find this project helpful, please support us with a Star. Thank you!**
